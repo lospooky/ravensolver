@@ -12,13 +12,20 @@ or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we 
 * Use the OneClick Installer (YMMV)
 
 ## Usage
-* Select a single XAML input file or a directory containing several ones in the **Choose Problem** tab
-* Ravensolver will now process the problem
-* In the **Active Problem** tab you will now see the current problem and a textual description of the found solution
-  * Flagging **Show Solution** will display the computed total or partial solution in the bottom-right matrix cell
-  * **<<** or **>>** will make RavenSolver move to the previous/next problem file, if a directory was selected
+* Select a single XAML input file or a directory containing several ones in the **Choose Problem** tab.
+* Ravensolver will now process the problem.
+* In the **Active Problem** tab you will now see the current problem and a textual description of the found solution.
+  * Flagging **Show Solution** will display the computed total or partial solution in the bottom-right matrix cell.
+  * **<<** or **>>** will make RavenSolver move to the previous/next problem file, if a directory was selected.
 * The **Visualization** tab displays the representation graph RavenSolver has built for the problem. The graph is the basis on which the solution is computed. Have fun with it!! :D
-* In **Logger** you will see the processing log for the problem, outlining all the operations RavenSolver performed
+* In **Logger** you will see the processing log for the problem, outlining all the operations RavenSolver performed.
+
+### Problem Files
+RavenSolver expects its problem files to be in XAML format. In hindsight this decision hasn't really been futureproof but at the time we found it very convenient.<br>
+In the **Matrices** directory, we provided a few sample problem files, including an empty one.<br>
+Unfortunately due to copyright reasons we cannot provide the original problem files from the Raven's Standard Progressive Matrices.<br>
+XAML is a vector graphics as well as a serialization format largely based on XML, so you should be able to create your own relatively easily with your favorite text editor.
+
 
 ## Credits
 
