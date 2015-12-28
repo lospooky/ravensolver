@@ -22,9 +22,8 @@ or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we 
 
 ### Problem Files
 RavenSolver expects its problem files to be in XAML format. In hindsight this decision hasn't really been futureproof but at the time we found it very convenient.<br>
-In the **Matrices** directory, we provided a few sample problem files, including an empty one.<br>
-Unfortunately due to copyright reasons we cannot provide the original problem files from the Raven's Standard Progressive Matrices.<br>
-XAML is a vector graphics as well as a serialization format largely based on XML, so you should be able to create your own relatively easily with your favorite text editor.
+Unfortunately due to copyright reasons we cannot provide the original problem files from the Raven's Standard Progressive Matrices, however in the **Matrices** directory we provided a few sample problems including an empty one.<br>
+[XAML] (https://msdn.microsoft.com/en-us/library/cc189036%28VS.95%29.aspx) is a vector graphics as well as a serialization format largely based on XML, so you should be able to create your own problems relatively easily with your favorite text editor.
 
 
 ## Credits
@@ -32,4 +31,4 @@ XAML is a vector graphics as well as a serialization format largely based on XML
 &copy; Simone Cirillo, Victor Hagelbäck 2010-2015
 
 ## License
-RavenSolver is distributed under the MIT License
+RavenSolver is distributed under the [GNU GPL License](http://www.gnu.org/licenses/gpl-2.0.html).
