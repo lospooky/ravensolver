@@ -1,14 +1,22 @@
 # RavenSolver
-RavenSolver is a fully automated solver for [Progressive Matrices Problems] (https://en.wikipedia.org/wiki/Raven's_Progressive_Matrices),
+<p>RavenSolver is a fully automated solver for [Progressive Matrices Problems] (https://en.wikipedia.org/wiki/Raven's_Progressive_Matrices),
 a widely used format of abstract reasoning test.<br>
 It was developed by me and my partner Victor Ström (now Hagelbäck) as our Master's Thesis project.<br>
 In brief, it takes a Progressive Matrix as its input and it will (hopefully) generate the solution.</br>
 For a thorough description of the approach we used as well as for the results we obtained on Raven's Standard Progressive Matrices
 sections C-D-E, please refer to our [thesis report] (http://studentarbeten.chalmers.se/publication/123536-an-anthropomorphic-solver-for-ravens-progressive-matrices)
-or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we published.
+or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we published.</p>
+
+<p>
+Ravensolver was entirely developed in C#, and is intended to run on Windows systems only.<br>
+It requires .NET 3.5 or greater.<br>
+If you attempt building it on Linux systems, i.e. with Mono, let us know how that goes! 
+</p>
 
 ## Installation
-* Download the latest release or clone the repo, build with Visual Studio 2015
+* Download the latest source, build with Visual Studio 2015
+* Clone the repo, build with Visual Studio 2015
+* Download the compiled binaries
 * Use the OneClick Installer (YMMV)
 
 ## Usage
@@ -21,7 +29,8 @@ or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we 
 * In **Logger** you will see the processing log for the problem, outlining all the operations RavenSolver performed.
 
 ### Problem Files
-RavenSolver expects its problem files to be in XAML format. In hindsight this decision hasn't really been futureproof but at the time we found it very convenient.<br>
+RavenSolver expects its problem files to be in XAML format.<br>
+In hindsight this decision hasn't really been futureproof but at the time we found it very convenient.<br>
 Unfortunately due to copyright reasons we cannot provide the original problem files from the Raven's Standard Progressive Matrices, however in the **Matrices** directory we provided a few sample problems including an empty one.<br>
 [XAML] (https://msdn.microsoft.com/en-us/library/cc189036%28VS.95%29.aspx) is a vector graphics as well as a serialization format largely based on XML, so you should be able to create your own problems relatively easily with your favorite text editor.
 
