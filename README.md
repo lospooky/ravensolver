@@ -2,10 +2,11 @@
 
 RavenSolver is a fully automated solver for [Progressive Matrices Problems] (https://en.wikipedia.org/wiki/Raven's_Progressive_Matrices),
 a widely used format of abstract reasoning test.<br>
-It was developed by me and Victor Strˆm (now Hagelb‰ck) as our Master's Thesis project.<br>
-In brief, it takes a Progressive Matrix as its input and it will (hopefully) generate the solution.<br>
-For a thorough description of the approach we used as well as for the results we obtained on Raven's Standard Progressive Matrices
-sections C-D-E, please refer to our [thesis report] (http://studentarbeten.chalmers.se/publication/123536-an-anthropomorphic-solver-for-ravens-progressive-matrices)
+It was developed by me and Victor Str√∂m (now Hagelb√§ck) as our Master's Thesis project.<br>
+In brief, it takes a Progressive Matrix as its input and it will (hopefully) produce the solution.<br>
+
+If you're familiar with the RPM, Ravensolver's novelty consists in the fact that it does not pick the solution out of the provided alternatives, but it generates it entirely on its own.
+For a thorough description of the approach we used and for the results we obtained on Raven's Standard Progressive Matrices sections C-D-E, please refer to our [thesis report] (http://studentarbeten.chalmers.se/publication/123536-an-anthropomorphic-solver-for-ravens-progressive-matrices)
 or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we published.
 
 <p>
@@ -21,22 +22,22 @@ If you attempt building it on Linux systems, i.e. with Mono, let us know how tha
 * Use the [OneClick Installer](http://blog.spook.ee/ravensolver/publish.htm) (YMMV)
 
 ## Usage
-* Select a single XAML input file or a directory containing several ones in the **Choose Problem** tab.
-* Ravensolver will now process the problem.
+* Select a single XAML input file or a directory containing many in the **Choose Problem** tab.
+* Ravensolver will now automagically process the problem.
 * In the **Active Problem** tab you will now see the current problem and a textual description of the found solution.
   * Flagging **Show Solution** will display the computed total or partial solution in the bottom-right matrix cell.
   * **<<** or **>>** will make RavenSolver move to the previous/next problem file, if a directory was selected.
 * The **Visualization** tab displays the representation graph RavenSolver has built for the problem. The graph is the basis on which the solution is computed. Have fun with it!! :D
-* In **Logger** you will see the processing log for the problem, outlining all the operations RavenSolver performed.
+* In **Logger** you will see the processing log for the problem, outlining all the operations RavenSolver has performed to obtain the current solution.
 
 ### Problem Files
 RavenSolver expects its problem files to be in XAML format.<br>
 In hindsight this decision hasn't really been futureproof but at the time we found it very convenient.<br>
-Unfortunately due to copyright reasons we cannot provide the original problem files from the Raven's Standard Progressive Matrices, however in the **Matrices** directory we provided a few sample problems including an empty one.<br>
+Unfortunately due to copyright reasons we cannot provide the files for the actual test items from the Raven's Standard Progressive Matrices sets. However in the **Matrices** directory we provided a few sample problems, including an empty one.<br>
 [XAML] (https://msdn.microsoft.com/en-us/library/cc189036%28VS.95%29.aspx) is a vector graphics as well as a serialization format largely based on XML, so you should be able to create your own problems relatively easily with your favorite text editor.
 
 
 ## Credits & License
 
-&copy; Simone Cirillo, Victor Hagelb‰ck 2010-2015.<br>
+&copy; Simone Cirillo, Victor Hagelb√§ck. 2010-2015.<br>
 RavenSolver is distributed under the [GNU GPL License](http://www.gnu.org/licenses/gpl-2.0.html).
