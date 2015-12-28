@@ -1,5 +1,5 @@
 # RavenSolver
-<p>
+
 RavenSolver is a fully automated solver for [Progressive Matrices Problems] (https://en.wikipedia.org/wiki/Raven's_Progressive_Matrices),
 a widely used format of abstract reasoning test.<br>
 It was developed by me and Victor Ström (now Hagelbäck) as our Master's Thesis project.<br>
@@ -7,7 +7,6 @@ In brief, it takes a Progressive Matrix as its input and it will (hopefully) gen
 For a thorough description of the approach we used as well as for the results we obtained on Raven's Standard Progressive Matrices
 sections C-D-E, please refer to our [thesis report] (http://studentarbeten.chalmers.se/publication/123536-an-anthropomorphic-solver-for-ravens-progressive-matrices)
 or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we published.
-</p>
 
 <p>
 Ravensolver was entirely developed in C#, and is intended to run on Windows systems only.<br>
@@ -37,9 +36,7 @@ Unfortunately due to copyright reasons we cannot provide the original problem fi
 [XAML] (https://msdn.microsoft.com/en-us/library/cc189036%28VS.95%29.aspx) is a vector graphics as well as a serialization format largely based on XML, so you should be able to create your own problems relatively easily with your favorite text editor.
 
 
-## Credits
+## Credits & License
 
-&copy; Simone Cirillo, Victor Hagelbäck 2010-2015
-
-## License
+&copy; Simone Cirillo, Victor Hagelbäck 2010-2015.<br>
 RavenSolver is distributed under the [GNU GPL License](http://www.gnu.org/licenses/gpl-2.0.html).
