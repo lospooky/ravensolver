@@ -7,15 +7,22 @@ For a thorough description of the approach we used as well as for the results we
 sections C-D-E, please refer to our [thesis report] (http://studentarbeten.chalmers.se/publication/123536-an-anthropomorphic-solver-for-ravens-progressive-matrices)
 or to the [journal article] (http://dx.doi.org/10.1016/j.cogsys.2012.08.002) we published.
 
-[TOC]
-
 ## Installation
 * Download the latest release or clone the repo, build with Visual Studio 2015
 * Use the OneClick Installer (YMMV)
 
 ## Usage
-* Select a single XAML input file or a directory containing several ones in the **Choose Problem** tab 
+* Select a single XAML input file or a directory containing several ones in the **Choose Problem** tab
+* Ravensolver will now process the problem
+* In the **Active Problem** tab you will now see the current problem and a textual description of the found solution
+  * Flagging **Show Solution** will display the computed total or partial solution in the bottom-right matrix cell
+  * **<<** or **>>** will make RavenSolver move to the previous/next problem file, if a directory was selected
+* The **Visualization** tab displays the representation graph RavenSolver has built for the problem. The graph is the basis on which the solution is computed. Have fun with it!! :D
+* In **Logger** you will see the processing log for the problem, outlining all the operations RavenSolver performed
 
 ## Credits
 
+&copy; Simone Cirillo, Victor Hagelbäck 2010-2015
+
 ## License
+RavenSolver is distributed under the MIT License
