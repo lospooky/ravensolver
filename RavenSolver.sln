@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenSolver", "RavenSolver\RavenSolver.csproj", "{FF71C6B6-6D33-47DB-84CC-FDB4AC3272CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeStructures", "TreeStructures\TreeStructures.csproj", "{9A9A52CB-957C-4B96-9CB0-2807A16991AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{3CC0B9D2-C726-4853-B191-5EA162886D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encoder", "Encoder\Encoder.csproj", "{509A9837-6658-455C-95C8-9F933B97EEDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenTreeFunctions", "RavenTreeFunctions\RavenTreeFunctions.csproj", "{F23F78C2-098B-49DE-B697-BD683CCCB631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomFileDialog", "WpfCustomFileDialog\WpfCustomFileDialog.csproj", "{99B4B46D-B52D-4EAF-98EE-C7B398575D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF71C6B6-6D33-47DB-84CC-FDB4AC3272CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF71C6B6-6D33-47DB-84CC-FDB4AC3272CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF71C6B6-6D33-47DB-84CC-FDB4AC3272CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF71C6B6-6D33-47DB-84CC-FDB4AC3272CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9A52CB-957C-4B96-9CB0-2807A16991AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9A52CB-957C-4B96-9CB0-2807A16991AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9A52CB-957C-4B96-9CB0-2807A16991AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9A52CB-957C-4B96-9CB0-2807A16991AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC0B9D2-C726-4853-B191-5EA162886D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC0B9D2-C726-4853-B191-5EA162886D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC0B9D2-C726-4853-B191-5EA162886D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC0B9D2-C726-4853-B191-5EA162886D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{509A9837-6658-455C-95C8-9F933B97EEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509A9837-6658-455C-95C8-9F933B97EEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509A9837-6658-455C-95C8-9F933B97EEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509A9837-6658-455C-95C8-9F933B97EEDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23F78C2-098B-49DE-B697-BD683CCCB631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23F78C2-098B-49DE-B697-BD683CCCB631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23F78C2-098B-49DE-B697-BD683CCCB631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23F78C2-098B-49DE-B697-BD683CCCB631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

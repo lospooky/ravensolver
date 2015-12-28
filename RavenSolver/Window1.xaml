@@ -1,0 +1,82 @@
+<Window x:Class="RavenSolver.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Raven Solver" Height="550" Width="662">
+    <TabControl Name="Tabs">
+        <TabItem Header="Choose Problem" Name="TabChooseProblem">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                    <Button Height="23" HorizontalAlignment="Left" Margin="10,10,10,10" Name="ButtonChooseFile" Click="ButtonChooseFile_Click">Choose input file...</Button>
+                    <TextBox Name="txtInputFileName" Margin="0,0,10,0" Padding="5" IsReadOnly="True" Width="200" Height="28"></TextBox>
+                    <Button Height="23" HorizontalAlignment="Left" Margin="10,10,10,10" Name="ButtonPrevious" Click="ButtonPrevious_Click">&lt;&lt;</Button>
+                    <Button Height="23" HorizontalAlignment="Left" Margin="10,10,10,10" Name="ButtonNext" Click="ButtonNext_Click">&gt;&gt;</Button>
+                    <Button Height="23" HorizontalAlignment="Left" Margin="10,10,10,10" Name="ButtonRunAll" Click="ButtonRunAll_Click" IsEnabled="False">Run all and log results</Button>
+                </StackPanel>                
+                <Canvas></Canvas>
+            </DockPanel>
+        </TabItem>
+        <TabItem Header="Active Problem" Name="TabActiveProblem" IsEnabled="False">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center" >
+                    <Label x:Name="lblActiveProblem" />
+                    <Slider Visibility="Collapsed" x:Name="zoomSlider" Width="100" Maximum="2" Minimum="0.1" Value="0.5" Orientation="Horizontal" VerticalAlignment="Center" />
+					<CheckBox Name="ChkSolutionVisible" Checked="ChkSolutionVisible_Checked" Unchecked="ChkSolutionVisible_Unchecked" VerticalAlignment="Center" />
+                    <Label x:Name="lblShowSolution" Content="Show solution" VerticalAlignment="Center" />
+                    <Button Height="23" HorizontalAlignment="Left" Margin="10,10,10,10" Name="VisButtonPrevious" Click="ButtonPrevious_Click">&lt;&lt;</Button>
+                    <Button Height="23" HorizontalAlignment="Left" Margin="10,10,10,10" Name="VisButtonNext" Click="ButtonNext_Click">&gt;&gt;</Button>
+				</StackPanel>
+                <StackPanel Orientation="Vertical" DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+                    <Label Content="Functions needed to solve active problem:" FontWeight="Bold" />
+                    <StackPanel x:Name="SPNeededFunctions" Orientation="Vertical" />
+                </StackPanel>
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <ContentPresenter Name="GuiCanvas" RenderTransformOrigin="0,0">
+                        <ContentPresenter.LayoutTransform>
+                            <ScaleTransform
+                            ScaleX="{Binding Path=Value,
+                                        ElementName=zoomSlider}"
+                            ScaleY="{Binding Path=Value,
+                                        ElementName=zoomSlider}"/>
+                        </ContentPresenter.LayoutTransform>
+                    </ContentPresenter>
+                </ScrollViewer>
+            </DockPanel>
+        </TabItem>
+        <TabItem Header="Visualization" Name="TabVisualization" IsEnabled="False">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center" >
+                    <Slider Visibility="Visible" x:Name="visualizationZoomSlider" Width="100" Maximum="2" Minimum="0.1" Value="1" Orientation="Horizontal" VerticalAlignment="Center" />
+                </StackPanel>
+                <Border BorderThickness="1" BorderBrush="Black" CornerRadius="4" Margin="0,20,5,0">
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                        <ContentPresenter Name="VisualizationContent" RenderTransformOrigin="0,0">
+                            <ContentPresenter.LayoutTransform>
+                                <ScaleTransform
+                                ScaleX="{Binding Path=Value,
+                                            ElementName=visualizationZoomSlider}"
+                                ScaleY="{Binding Path=Value,
+                                            ElementName=visualizationZoomSlider}"/>
+                            </ContentPresenter.LayoutTransform>
+                        </ContentPresenter>
+                    </ScrollViewer>
+                </Border>
+            </DockPanel>
+        </TabItem>
+        <TabItem Header="Logger" Name="TabLogger" IsEnabled="True">
+            <Border BorderThickness="1" BorderBrush="Black" CornerRadius="4" Margin="0,20,5,0">
+                <ScrollViewer Name="ScrollViewerLogger" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <Label Name="TextboxLogger" Background="Transparent" BorderThickness="0"></Label>
+                </ScrollViewer>
+            </Border>
+        </TabItem>
+        <TabItem Header="MultiLogger" Name="TabMultiLogger" IsEnabled="false">
+            <Border BorderThickness="1" BorderBrush="Black" CornerRadius="4" Margin="0,20,5,0">
+                <ScrollViewer Name="ScrollViewerMultiLogger" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <Label Name="TextboxMultiLogger" Background="Transparent" BorderThickness="0"></Label>
+                </ScrollViewer>
+            </Border>
+        </TabItem>
+    </TabControl>
+
+
+</Window>

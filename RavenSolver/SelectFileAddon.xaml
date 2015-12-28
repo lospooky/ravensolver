@@ -1,0 +1,13 @@
+﻿<src:WindowAddOnBase x:Class="RavenSolver.SelectFileAddon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:WpfCustomFileDialog;assembly=WpfCustomFileDialog"
+    Title="SelectWindow" Height="300" Width="300" Loaded="Window_Loaded" AllowDrop="True" ShowInTaskbar="False" >
+        <ContentPresenter RenderTransformOrigin="0,0" Name="GuiCanvas">
+            <ContentPresenter.LayoutTransform>
+                <ScaleTransform
+                ScaleX="0.5"
+                ScaleY="0.5"/>
+            </ContentPresenter.LayoutTransform>
+        </ContentPresenter>
+</src:WindowAddOnBase >
