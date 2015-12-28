@@ -15,10 +15,10 @@ If you attempt building it on Linux systems, i.e. with Mono, let us know how tha
 </p>
 
 ## Installation
-* [Download] (https://github.com/lospooky/ravensolver/archive/master.zip) the latest source, build with Visual Studio 2015
-* Clone the repo, build with Visual Studio 2015
+* [Download] (https://github.com/lospooky/ravensolver/archive/master.zip) the source, build with Visual Studio 2015.
+* Clone the repo, `git clone https://github.com/lospooky/ravensolver.git` and build with Visual Studio 2015.
 * Download the compiled binaries
-* Use the OneClick Installer (YMMV)
+* Use the [OneClick Installer](http://blog.spook.ee/ravensolver/publish.htm) (YMMV)
 
 ## Usage
 * Select a single XAML input file or a directory containing several ones in the **Choose Problem** tab.
