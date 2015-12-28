@@ -38,6 +38,6 @@ Unfortunately due to copyright reasons we cannot provide the files for the actua
 
 
 ## Credits & License
-
+[blog.spook.ee/ravensolver](http://blog.spook.ee/ravensolver)
 &copy; Simone Cirillo, Victor Hagelbäck. 2010-2015.<br>
 RavenSolver is distributed under the [GNU GPL License](http://www.gnu.org/licenses/gpl-2.0.html).
