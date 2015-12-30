@@ -18,7 +18,7 @@ If you attempt building it on Linux systems, i.e. with Mono, let us know how tha
 ## Installation
 * [Download] (https://github.com/lospooky/ravensolver/archive/master.zip) the source, build with Visual Studio 2015.
 * Clone the repo, `git clone https://github.com/lospooky/ravensolver.git` and build with Visual Studio 2015.
-* Download the compiled binaries
+* [Download](https://github.com/lospooky/ravensolver/releases/download/v1.0/ravensolver-v1.0.zip) the compiled binaries, unzip, run
 * Use the [OneClick Installer](http://blog.spook.ee/ravensolver/publish.htm) (YMMV)
 
 ## Usage
